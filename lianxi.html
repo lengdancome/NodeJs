@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button type="button" onclick="showSeconds()">计算人生时间</button>
+    <div id="seconds"></div>
+    <script>
+        var write=document.getElementById('seconds');
+        function showSeconds(){
+            var now=new Date();
+            var input=new Date(prompt("请输入你的出生年月日",'1992-10-25'));
+            console.log(input);
+            write.innerHTML=(now-input)/100+"s";
+        }
+
+        console.log("1");
+        setTimeout(()=>{
+            console.log('setTimeOut');
+        },1000);
+        console.log('3');
+    </script>
+</body>
+</html>
