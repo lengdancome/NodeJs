@@ -20,7 +20,7 @@ gulp.task('lint', function() {
 
 // 编译Sass
 gulp.task('sass', function() {
-    gulp.src('./sass/*.sass')
+    gulp.src('./scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('./css'));
 });
