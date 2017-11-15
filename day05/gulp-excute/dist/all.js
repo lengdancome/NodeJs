@@ -1,7 +1,3 @@
-/**
- * Created by web-01 on 2017/11/15.
- */
-
 /*!
  * jQuery JavaScript Library v3.2.1
  * https://jquery.com/
@@ -10255,3 +10251,10 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+/**
+ * Created by web-01 on 2017/11/15.
+ */
+$("#box1").click(()=>{
+    $("#box2").slideToggle()
+})
